@@ -7,13 +7,17 @@
 
     <div id="app">
 
-        <p>Nome:</p><input id="app" v-model="nome"><br/><br/>
-        <p>Email:</p><input id="app" v-model="email"><br><br/>
-        <p>Idade:</p><input id="app" v-model="idade"><br><br/><br/>
+        <p>Nome:</p><input id="app" v-model="nome"><br/>
+        <p>Email:</p><input id="app" v-model="email"><br>
+        <p>Idade:</p><input id="app" v-model="idade"><br><br/>
         
+        <p>Feminio<input type="radio" id="feminino" value="feminino" v-model="sexo">
+        Masculino<input type="radio" id="masculino" value="masculino" v-model="sexo"></p>
+
 
         <h1>NOME: {{nome}}</h1>
         <h1>EMAIL: {{email}}</h1>
+        <h1>SEXO: {{sexo}}</h1>
         <h1>IDADE: {{idade}}</h1>
 
     </div>
@@ -27,9 +31,10 @@
         var app = new Vue({
             el: '#app',
             data: {
-                nome: 0,
-                email: 0,
-                idade: 0,
+                nome: null,
+                email: null,
+                idade: null,
+                sexo: null
             }
         })
 
