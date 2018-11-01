@@ -1,0 +1,39 @@
+<html lang="html">
+<head>
+    <meta charset="utf-8">
+    <title>teste</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <p>Nome:</p><input id="app" v-model="nome"><br/><br/>
+        <p>Email:</p><input id="app" v-model="email"><br><br/>
+        <p>Idade:</p><input id="app" v-model="idade"><br><br/><br/>
+        
+
+        <h1>NOME: {{nome}}</h1>
+        <h1>EMAIL: {{email}}</h1>
+        <h1>IDADE: {{idade}}</h1>
+
+    </div>
+
+
+    
+    <script src="https://unpkg.com/vue"></script>
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                nome: 0,
+                email: 0,
+                idade: 0,
+            }
+        })
+
+    </script>
+
+</body>
+</html>
